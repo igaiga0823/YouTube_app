@@ -1,0 +1,22 @@
+
+    if(isset($category_name)){
+
+
+        $stmt = $db->prepare('insert into categories (category_name, user_id) value(?,?)');
+        if (!$stmt) {
+            die($db->error);
+        }
+        $stmt->bind_param('si', $category_name,$user);
+        $success = $stmt->execute();
+        if (!$success) {
+            die($db->error);
+        }
+        $test_alert = "<script type='text/javascript'>alert('リストが作成できました。');</script>";
+        echo $test_alert;
+        ?><script>
+        setTimeout(function(){
+            window.location.href = '../view/view_list.php';
+          }, 0);
+    </script>
+    <?php
+    }
