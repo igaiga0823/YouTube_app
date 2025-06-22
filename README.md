@@ -40,6 +40,8 @@ phpとpythonで作られており、cssのフレームワークとしてTailwind
 
 本リポジトリからのインストールではなく，WEBアプリケーション化されているため，以下のurlからアクセスしてください． 
 <https://iganami1106.com/YouTube_app/login/login.php>
+
+（現在サーバーが停止しており，ここからのアクセスができません）
  
 # Usage
 
